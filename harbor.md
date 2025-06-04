@@ -16,7 +16,8 @@
 + **重启harbor**
   - 在/root/harbor/docker-compose.yml路径下执行命令
   > docker-compose up -d
-+ 	
+
+
 
 ---
 + 浏览器访问harbor

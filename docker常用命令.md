@@ -1,6 +1,5 @@
 # docker常用命令
 
-
 + docker ps显示信息不全，解决方法
   - docker ps --no-trunc
   
@@ -9,32 +8,22 @@
   
 + 根据条件过滤显示的容器
   - docker ps -f "status=exited"
-  
-  
-  
+
 + 显示名称包含 my_container 的容器
   - docker ps -f "name=my_container"  
   
 + 格式化输出
   - docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Status}}"
 
-
-
 + 删除容器
   - docker rm 容器id
-
 
 + 删除镜像
   - docker rmi 镜像id
 
-
-
-
-
 + docker执行Dockerfile文件中的内容，在其之下maven打包时候，依赖下载的位置（在安装docker的服务器上执行）
   - find / -name "*.m2*" -type d
   - find . -name "*.jar" -printf "%f\n" (最后的 -printf "%f\n" 表示只输出文件名，而不包含路径)
-
 
 
 ### Dockerfile编写
