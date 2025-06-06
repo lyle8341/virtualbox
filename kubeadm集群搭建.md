@@ -87,9 +87,7 @@
   /run/containerd/containerd.sock #(link)
   ```
 
-
 ---
-
 
 ### 开始安装kubeadm等
 + 1.Kubernetes yum repository
@@ -196,35 +194,11 @@
     + kubectl delete -f https://raw....
     + **遇到问题，看容器日志，大概率是镜像下载失败**
     + **遇到问题，看容器日志，大概率是镜像下载失败**
-  + 6.安装长时间失败总结
+  + 6.[安装长时间无响应](https://www.cnblogs.com/Ky150/p/18288133)
     ```shell
     我将proxy代理给了宿主机，这意味着我的Pod会把流量转发给宿主机，通过宿主机进行通信，
     而Pod要通信的对端IP地址正是我定义的Pod网段（10.96.0.0/12，172.16.0.0/16），
     这通过宿主机进行通信肯定是找不到对端的。
     ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	- [一次calico-kube-controllers 一直处于创建中引发的后续](https://www.cnblogs.com/Ky150/p/18288133)
 
