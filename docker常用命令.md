@@ -25,6 +25,13 @@
   - find / -name "*.m2*" -type d
   - find . -name "*.jar" -printf "%f\n" (最后的 -printf "%f\n" 表示只输出文件名，而不包含路径)
 
++ 检索
+  - docker search xx
+
+
+
+
+
 
 ### Dockerfile编写
 + 方式一（每次都会下载jar依赖）
@@ -58,5 +65,7 @@ ENTRYPOINT ["java", "-jar", "demo.jar"]
 ```
 
 
+### 用nginx制作一个自定义的nginx，发布
++
 
 
